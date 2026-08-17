@@ -2,6 +2,10 @@
 
 Harvesting can be configured either manually through the CKAN graphical interface or automatically using the fedora-harvester tool. This guide covers the automatic approach, which offers greater efficiency and reproducibility.
 
+<video src="../../assets/video/how-to-harvest.mp4" controls width="100%">
+  Your browser does not support the video tag.
+</video>
+
 ## Prerequisites
 
 Before proceeding, ensure that you have completed the [Installation](installation.md) steps and have access to the Data Catalogue platform (based on CKAN).
