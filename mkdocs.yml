@@ -1,5 +1,12 @@
-site_name: ''
- 
+site_name: "FEDORA Docs"
+
+plugins:
+  - search
+  - mermaid2
+
+extra_css:
+  - stylesheets/mermaid.css
+
 theme:
   name: material
   custom_dir: overrides
@@ -29,6 +36,11 @@ theme:
     - content.code.copy
 
 markdown_extensions:
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:mermaid2.fence_mermaid_custom
   - pymdownx.highlight:
       anchor_linenums: true
   - pymdownx.superfences
@@ -44,15 +56,16 @@ markdown_extensions:
 nav:
   - Home: index.md
   - Data Space Overview:
-    - Overview: overview/fedora-overview.md
-    - Main Goal: overview/project-main-goal.md
+      - Overview: overview/fedora-overview.md
+      - Main Goal: overview/project-main-goal.md
     # - Innovation: overview/innovation.md
   - Harvesting:
-    - Introduction : harvesting/introduction.md
-    - Installation : harvesting/installation.md
-    - How to harvest : harvesting/how-to-harvest.md
+      - Introduction: harvesting/introduction.md
+      - Installation: harvesting/installation.md
+      - How to harvest: harvesting/how-to-harvest.md
     # - Harvest mobilityDCAT-AP : harvesting/harvest-mobilitydcat-ap.md
   - AI Assistant:
-    - Introduction: ai-assistant/introduction.md
-    - User guide : ai-assistant/user-guide.md
+      - Introduction: ai-assistant/introduction.md
+      - RAG architecture: ai-assistant/architecture.md
+      - User guide: ai-assistant/user-guide.md
   - Changelog: changelog.md

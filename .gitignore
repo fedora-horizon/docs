@@ -1,4 +1,6 @@
 venv/
 site/
+.idea
 
-
+/pyproject.toml
+/uv.lock
